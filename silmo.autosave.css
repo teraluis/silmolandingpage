@@ -1,0 +1,137 @@
+.background {
+
+	background-image: url("background.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+}
+.logo_silmo {
+	position: absolute;
+	top: 150px;
+	left: 85px;
+}
+.deux19 {
+	position: absolute;
+	top: 225px;
+	left: 100px;
+}
+.texte {
+  margin-top: 15px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: justify;
+
+}
+
+.cachee {
+	height: 97px;
+	color: linear-gradient( rgba(255,255,255,0.7), rgba(0,0,0,0.1) );
+    background-image: linear-gradient(  rgba(255,255,255,0.1) 80%, rgba(255,255,255,1) 100% );
+    opacity: 0.6;
+	overflow-y: hidden;
+	transition: all 10s ease;
+	-webkit-box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+	-moz-box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+	box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+}
+.cachee:hover,.cachee:focus {
+	height: 350px;
+	animation-name: autoheight;
+	animation-duration: 4s;
+	background-image: none;
+	box-shadow: none;
+	opacity: 1;
+}
+.animation {
+	height: 350px;
+	animation-name: autoheight;
+	animation-duration: 4s;
+	background-image: none;
+	box-shadow: none;
+	opacity: 1;
+}
+.animation2 {
+	height: 97px;
+	color: linear-gradient( rgba(255,255,255,0.7), rgba(0,0,0,0.1) );
+    background-image: linear-gradient(  rgba(255,255,255,0.1) 80%, rgba(255,255,255,1) 100% );
+    opacity: 0.6;
+	overflow-y: hidden;
+	transition: height 10s;
+	-webkit-box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+	-moz-box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+	box-shadow: inset -1px -36px 68px -26px rgba(240,240,240,1);
+	animation-name: animationEnroulement;
+	animation-duration: 4s;
+}
+#derouler {
+	width: 100%;
+	color: white;
+	border-bottom: solid 1px white;
+	cursor: pointer;
+	text-align: right;
+	padding: 10px 0px;
+	text-transform: uppercase;
+}
+
+@keyframes autoheight {
+  from {
+  	height: 100px;
+  	opacity: 0.6;
+  }
+  to {
+  	height: 350px;
+  	opacity: 1;
+  }
+}
+@keyframes animationEnroulement {
+  from {
+  	height: 350px;
+  	opacity: 1;
+  }
+  to {
+  	height: 97px;
+  	opacity: 0.6;
+  }
+}
+.encadre {
+	margin: 25px 0px;
+	
+	border-right: solid 1px white; 
+}
+.gobold {
+	font-family:'gobold_high_boldregular';
+	text-align: center;
+	text-transform: uppercase;
+	color: yellow;
+	font-weight: bold;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	line-height: 1.465;
+}
+input[type=text], input[type=email],input[type=number] {
+  -webkit-transition: all 0.90s ease-in-out;
+  -moz-transition: all 0.90s ease-in-out;
+  -ms-transition: all 0.90s ease-in-out;
+  -o-transition: all 0.90s ease-in-out;
+  outline: none;
+  border: 1px solid #300003;
+}
+ 
+input[type=text]:focus,input[type=email]:focus,input[type=number]:hover {
+-webkit-box-shadow: 0px 2px 10px 2px rgba(255,216,0,0.9);
+-moz-box-shadow: 0px 2px 10px 2px rgba(255,216,0,0.9);
+box-shadow: 0px 2px 19px 2px rgba(255,216,0,0.9);
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+#message_alert{
+	display: none;
+}
+.chargement {
+	display: none;
+	position: relative;
+	text-align: center;
+}
+#message_success {
+	display: none;
+}
